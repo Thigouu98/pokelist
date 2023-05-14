@@ -1,0 +1,139 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  max-width: 1080px;
+  margin: 0 auto;
+  background-color: #dcdee3;
+  color: #151619;
+}
+
+body.escuro {
+  background-color: #151515;
+  color: #dcdee3;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header .logo,
+header .sol-escuro {
+  width: 30px;
+}
+
+header #botao-alterar-tema {
+  background: none;
+  border: none;
+}
+
+header .logo:hover,
+header .sol-escuro:hover {
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+main {
+  backdrop-filter: blur(2px);
+  padding: 25px;
+}
+
+main .listagem-pokemon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+main .cartao-pokmon {
+  background-color: rgba(250, 250, 250, 0.7);
+  width: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokmon:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  background-color: rgba(150, 200, 230, 0.5);
+  box-shadow: 0px 0px 15px -8px;
+}
+
+.escuro .cartao-pokmon {
+  background-color: rgba(80, 80, 80, 0.7);
+}
+
+.escuro .cartao-pokmon:hover {
+  background-color: rgba(30, 66, 100, 0.418);
+}
+
+main .cartao-pokmon .informacoes {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid #333333;
+  background-color: #101b333f;
+}
+
+main .cartao-pokmon .informacoes span {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+main .cartao-pokmon .gif {
+  width: 70px;
+  height: 70px;
+}
+
+main .cartao-pokmon .tipos {
+  display: flex;
+  gap: 15px;
+}
+
+main .cartao-pokmon .tipo {
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.grama {
+  background-color: #7ac74c;
+}
+
+.veneno {
+  background-color: #df67ddfb;
+}
+
+.fogo {
+  background-color: #ee8130;
+}
+
+.agua {
+  background-color: #6390f0;
+}
+
+.inseto {
+  background-color: #a6b91a;
+}
+
+main .descricao {
+  max-height: 80px;
+  overflow-y: scroll;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+body.escuro .grama,
+body.escuro .veneno,
+body.escuro .fogo,
+body.escuro .agua,
+body.escuro .inseto {
+  color: #151619;
+}
